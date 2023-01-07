@@ -1,0 +1,47 @@
+﻿@model TodosMVC.Models.Todo
+
+@{
+    ViewData["Title"] = "Chỉnh sửa";
+}
+
+<h1>Chỉnh sửa chi tiết công việc</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Edit", "Todos", FormMethod.Post))
+        {
+            @Html.HiddenFor(m=>m.Id)
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Title,"Tiêu đề *",new {@class="control-label mt-3"})
+                @Html.TextBoxFor(model => model.Title,new {@class = "form-control",name="Title"})
+            </div>
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.Description,"Mô tả",new {@class="control-label"})
+                @Html.TextAreaFor(model => model.Description,3,2,new {@class = "form-control",name="Title"})
+            </div>
+            <div class="form-group mb-3">
+                @Html.LabelFor(model => model.CreatedDate,"Ngày tạo",new {@class="control-label"})
+                @(Model.CreatedDate)
+            </div>
+            <div class="form-group mb-3">
+                @Html.CheckBoxFor(model => model.Status,new {name="Status"})
+                @Html.LabelFor(model => model.Status,"Hoạt động",new {@class="control-label"})
+                
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Trở về danh sách</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
