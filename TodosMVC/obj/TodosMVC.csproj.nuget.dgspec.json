@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huulu\\source\\repos\\TodosMVC\\TodosMVC\\TodosMVC.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\mvc-asp.net\\TodosMVC\\TodosMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huulu\\source\\repos\\TodosMVC\\TodosMVC\\TodosMVC.csproj": {
+    "C:\\Users\\HP\\source\\repos\\mvc-asp.net\\TodosMVC\\TodosMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huulu\\source\\repos\\TodosMVC\\TodosMVC\\TodosMVC.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\mvc-asp.net\\TodosMVC\\TodosMVC.csproj",
         "projectName": "TodosMVC",
-        "projectPath": "C:\\Users\\huulu\\source\\repos\\TodosMVC\\TodosMVC\\TodosMVC.csproj",
-        "packagesPath": "C:\\Users\\huulu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huulu\\source\\repos\\TodosMVC\\TodosMVC\\obj\\",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\mvc-asp.net\\TodosMVC\\TodosMVC.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\mvc-asp.net\\TodosMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huulu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -49,6 +61,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -74,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

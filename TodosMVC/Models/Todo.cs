@@ -13,5 +13,8 @@ namespace TodosMVC.Models
 
         [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; } //ngày tạo
+
+        // user ID from AspNetUser table.
+        public string? OwnerID { get; set; }
     }
 }
